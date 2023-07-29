@@ -1,0 +1,385 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: 900;
+    overflow: hidden;
+ 
+
+}
+body{
+    background-color: black;
+    padding: 8px;
+}
+.spotify{
+    display: flex;
+}
+.sidebar{
+    background-color:black;
+    height: 100vh;
+    width: 530px;
+
+    
+
+}
+.maincontent{
+   background-color: #212121;
+   height: 85vh;
+   width: 100%;
+   border-radius: 0.4rem;
+   padding: 24px;
+   padding-top: 0;
+   overflow: auto;
+
+}
+.player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:100vw;
+    height: 5em;
+
+}
+.cards{
+    padding: 24px;
+}
+.sidebar-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #121212;
+    margin-right: 0.5em;
+    padding: 8px 12px;
+    border-radius: 0.4rem;
+    height: 100px;
+}
+.options{
+    display: flex;
+    padding:4px 12px;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    
+   
+}
+.options i{
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+}
+.options:hover{
+    opacity:1 ;
+}
+.library{
+    height: 62vh;
+    background-color: #121212;
+    margin: 0.5em;
+    margin-left: 0;
+    padding: 8px 12px;
+    border-radius: 0.4rem;
+
+}
+.lib-nav{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #121212;
+    margin: 0.5em;
+    margin-left: 0;
+    padding: 8px 12px;
+    border-radius: 0.4rem;
+    align-items: center;
+}
+.lib-heading{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.lib-heading img{
+   height: 1.3rem;
+   margin-right: 1.5rem;
+   
+    
+}
+
+.lib-icons i{
+    padding: 5px 5px;
+    margin: 0 5px ;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    
+}
+.lib-heading:hover{
+    opacity: 1;
+
+}
+.lib-icons i:hover{
+    opacity: 1;
+   
+    border-radius: 50%;
+    background-color: rgba(134, 125, 125,0.15);
+    box-shadow: 0 0 8px rgba(134, 125, 125,0.3) ;
+}
+.boxes{
+    background-color: #242424;
+    border-radius: 0.4rem;
+    margin: 8px 0;
+    padding: 16px 20px ;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+button{
+    background-color: white;
+    color:black;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    width: 10rem;
+    margin-top: 10px;
+}
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.nav-heading{
+    display: flex;
+    padding-top: 24px;
+    justify-content:space-between;
+    align-items: center;
+  
+    background-color:#212121;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-bottom: 5px;
+
+ 
+    
+}
+.nav-heading-button button{
+    margin: 0 10px;
+}
+.nav-heading-button {
+  display: flex;
+ 
+}
+img{
+    height: 2rem;
+    padding: 0 2px;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.08);
+}
+.cards{
+    display: flex; 
+    justify-content:space-between;
+   
+    flex-wrap: wrap;
+}
+.card{
+    font-size: 0.8rem;
+    background-color:#252525;
+    height: 16rem;
+    width: 8rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem 2rem ;
+    border-radius: 0.5rem;
+
+}
+.card img{
+    height: 10rem;
+    border-radius: 0.5rem;
+    transform: scale(1);
+    margin: 0 1rem;
+}
+.card:hover{
+    background-color:#303030;
+    cursor: pointer;
+
+}
+.card-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.card-heading h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.card-heading div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+#headings{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+@media(max-width:1025px){
+   #direction{
+        display: none;
+    }
+    #plus{
+        transform: translateX(5px);
+    }
+}
+@media(max-width:1000px){
+    #greaterthan{
+        display: none;
+    }
+    #explore{
+        display: none;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+li{
+    margin: 1rem 0;
+    list-style:none ;
+    cursor: pointer;
+    opacity: 0.6;
+}
+li:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-icons{
+   
+   display: flex;
+}
+.footer-icon{
+    
+  
+    margin: 0 1rem;
+   margin-top: 20px;
+    cursor: pointer;
+}
+.footer-icon:hover{
+    transform: scale(1.015);
+}
+hr{
+    margin: 2rem 0;
+}
+.lastfooter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    
+
+}
+#last-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+#last-footer p{
+    opacity: 0.7;
+    margin: 0 0.5rem;
+}
+#last-footer p:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+.music-title{
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    align-items: center;
+}
+#para{
+    display: flex;
+    flex-direction: column;
+}
+#para p:hover{
+    text-decoration: underline
+}
+.kale{
+    height: 55px;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.kale img{
+    height: 50px;
+    border-radius: 0.2rem;
+}
+.controls{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.control-icons{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.player{
+    display: flex;
+}
+
+.last-icons{
+    width: 20%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.play-controls{
+    justify-content: center;
+   display: flex;
+   width: 60%;
+}
+.slider{
+    appearance: none;
+    height: 0.2rem;
+    background-color: BLACK;
+    padding: 0.5rem 0;
+}
+.slider::-webkit-slider-runnable-track{
+   
+
+   background-color:grey;
+ 
+   height: 0.2rem;
+   
+}
+.slider::-webkit-slider-thumb{
+    
+   
+   
+   background-color: rgb(255, 255, 255);
+   margin-top: -6px;
+
+}
